@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Wall Street News Scraper Dashboard — search top investment bank insights."""
+"""News Terminal Dashboard — search top investment bank insights."""
 
 import re
 import webbrowser
@@ -730,7 +730,7 @@ DASHBOARD_HTML = r"""<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Wall Street News Scraper</title>
+<title>News Terminal</title>
 <style>
   :root {
     --bg: #0a0e17;
@@ -1010,7 +1010,7 @@ DASHBOARD_HTML = r"""<!DOCTYPE html>
 
 <div class="header">
   <div class="header-inner">
-    <h1>Wall Street <span>News Scraper</span></h1>
+    <h1>News <span>Terminal</span></h1>
     <p>Real-time article search across top investment banks</p>
     <div class="bank-pills">
       <a class="pill-link" href="https://www.jpmorgan.com/insights" target="_blank" rel="noopener"><span class="pill jp">JPMorgan</span></a>
@@ -1040,7 +1040,7 @@ DASHBOARD_HTML = r"""<!DOCTYPE html>
 <div class="results" id="results">
   <div class="empty-state" id="emptyState">
     <div class="icon">&#x1F50D;</div>
-    <h2>Search Wall Street Insights</h2>
+    <h2>Search News Terminal</h2>
     <p>Enter a topic to scrape articles from 7 sources.
        Results are ranked by publish date.</p>
   </div>
@@ -1178,6 +1178,6 @@ def open_browser():
 
 if __name__ == "__main__":
     threading.Timer(1.0, open_browser).start()
-    print("\n  Wall Street News Scraper")
+    print("\n  News Terminal")
     print("  Dashboard -> http://127.0.0.1:5050\n")
     app.run(host="127.0.0.1", port=5050, debug=False)
